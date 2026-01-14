@@ -23,6 +23,32 @@ const page = {
         tabItems[index].classList.add("is-active");
       });
     });
+
+    // Widget Portfolio Show More
+    const showMoreBtn = document.querySelector(".portfolio__widget-more");
+    const widgetItems = document.querySelectorAll(".portfolio__widget-item");
+
+    const showCount = 3;
+    let visibleCount = showCount;
+
+    widgetItems.forEach((widgetItem, index) => {
+      if (index < showCount) {
+        widgetItem.classList.add("is-active");
+      }
+    });
+
+    showMoreBtn.addEventListener("click", () => {
+      visibleCount += showCount;
+
+      widgetItems.forEach((widgetItem, index) => {
+        if (index < visibleCount) {
+          widgetItem.classList.add("is-active");
+        }
+        if (visibleCount >= widgetItems.length) {
+          showMoreBtn.style.display = "none";
+        }
+      });
+    });
   },
 };
 page.init();
