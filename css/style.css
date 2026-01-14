@@ -485,8 +485,6 @@ section {
   grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   gap: 40px;
-  /* padding: var(--space-lg);
-  border-radius: var(--radius-md); */
 }
 .portfolio__other-item {
   position: relative;
