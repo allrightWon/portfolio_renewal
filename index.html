@@ -448,11 +448,16 @@
                           </div>
                           <h4 class="portfolio__main-name">도서 검색 페이지</h4>
                           <p class="portfolio__main-intro">
-                            카카오 도서 검색 API를 활용한 도서 탐색 서비스
+                            카카오 도서 검색 API를 활용하여, 간단한 도서 검색
+                            페이지를 제작했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>도서 검색 및 결과 리스트 구현</li>
-                            <li>도서 상세 페이지 라우팅</li>
+                            <li>Router를 통한 페이지 이동</li>
+                            <li>
+                              메인 페이지, 검색 결과 페이지, 도서 상세 페이지,
+                              카테고리 페이지
+                            </li>
+                            <li>검색 결과 페이지네이션 구현</li>
                             <li>카테고리 기반 필터링</li>
                           </ul>
                           <div class="portfolio__main-stack">
@@ -495,14 +500,17 @@
                               >Main Project</span
                             >
                           </div>
-                          <h4 class="portfolio__main-name">도서 검색 페이지</h4>
+                          <h4 class="portfolio__main-name">게시판 페이지</h4>
                           <p class="portfolio__main-intro">
-                            카카오 도서 검색 API를 활용한 도서 탐색 서비스
+                            React를 기반으로 간단한 글쓰기가 가능한 게시판
+                            페이지를 제작했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>도서 검색 및 결과 리스트 구현</li>
-                            <li>도서 상세 페이지 라우팅</li>
-                            <li>카테고리 기반 필터링</li>
+                            <li>Reducer 기반 CRUD 구현</li>
+                            <li>
+                              Context 사용을 통해 props drilling 문제 해결
+                            </li>
+                            <li>게시물 검색 기능 구현 & 검색어 강조</li>
                           </ul>
                           <div class="portfolio__main-stack">
                             <span class="portfolio__main-stack-item">HTML</span>
@@ -544,14 +552,19 @@
                               >Main Project</span
                             >
                           </div>
-                          <h4 class="portfolio__main-name">도서 검색 페이지</h4>
+                          <h4 class="portfolio__main-name">
+                            투두리스트 페이지
+                          </h4>
                           <p class="portfolio__main-intro">
-                            카카오 도서 검색 API를 활용한 도서 탐색 서비스
+                            React를 기반으로 간단한 투두리스트 페이지를
+                            제작했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>도서 검색 및 결과 리스트 구현</li>
-                            <li>도서 상세 페이지 라우팅</li>
-                            <li>카테고리 기반 필터링</li>
+                            <li>투두리스트 추가 및 삭제 기능</li>
+                            <li>리스트 드래그 앤 드롭 기능 구현(dnd-kit)</li>
+                            <li>완료 체크박스 구현</li>
+                            <li>완료/진행중, 최신순/오래된순 기반 정렬 구현</li>
+                            <li>필터링 기반 검색 기능 구현</li>
                           </ul>
                           <div class="portfolio__main-stack">
                             <span class="portfolio__main-stack-item">HTML</span>
@@ -590,16 +603,16 @@
                         <img
                           class="portfolio__widget-image"
                           src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          alt="하단 바 탭 슬라이드 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            하단 바 탭 슬라이드 위젯
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            하단 바 클릭 시 탭 형태로 슬라이드되는 위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -614,29 +627,34 @@
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/01/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_02.png"
+                          alt="flip 형식 회원가입 및 로그인 폼 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            flip 형식 회원가입 & 로그인 폼
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            flip 애니메이션으로 전환되는 회원가입 & 로그인 폼
+                            위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -651,29 +669,34 @@
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/02/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_03.png"
+                          alt="라이트박스 갤러리 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            라이트박스 갤러리
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            이미지 클릭 시 라이트박스 형태로 표시되는 갤러리
+                            위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -688,29 +711,33 @@
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/03/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_04.png"
+                          alt="SNS 아이콘 Hover 이펙트 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            SNS 아이콘 Hover 이펙트
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            SNS 아이콘에 다양한 hover 애니메이션을 적용한 위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -719,35 +746,37 @@
                             <span class="portfolio__widget-stack-item"
                               >CSS</span
                             >
-                            <span class="portfolio__widget-stack-item"
-                              >jQuery</span
-                            >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/04/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_05.png"
+                          alt="비밀번호 토글 회원가입 폼 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            비밀번호 토글 회원가입 폼
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            비밀번호 표시 및 숨김 토글 기능을 포함한 회원가입 폼
+                            위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -757,34 +786,38 @@
                               >CSS</span
                             >
                             <span class="portfolio__widget-stack-item"
-                              >jQuery</span
+                              >JavaScript</span
                             >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/05/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_06.png"
+                          alt="폰트 사이즈 변경 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            폰트 사이즈 변경 위젯
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            버튼 클릭으로 콘텐츠 폰트 크기를 조절할 수 있는 위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -794,34 +827,39 @@
                               >CSS</span
                             >
                             <span class="portfolio__widget-stack-item"
-                              >jQuery</span
+                              >JavaScript</span
                             >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/06/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_07.png"
+                          alt="상단 스크롤 게이지 바 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            상단 스크롤 게이지 바 위젯
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            페이지 스크롤 위치를 시각적으로 보여주는 상단 게이지
+                            바 위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -831,34 +869,39 @@
                               >CSS</span
                             >
                             <span class="portfolio__widget-stack-item"
-                              >jQuery</span
+                              >JavaScript</span
                             >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/07/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_08.png"
+                          alt="네비게이션 Hover 애니메이션 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            네비게이션 Hover 애니메이션 위젯
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            네비게이션 메뉴에 hover 애니메이션을 적용한 인터랙션
+                            위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -867,35 +910,37 @@
                             <span class="portfolio__widget-stack-item"
                               >CSS</span
                             >
-                            <span class="portfolio__widget-stack-item"
-                              >jQuery</span
-                            >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/08/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
+
                     <li class="portfolio__widget-item">
                       <div class="portfolio__widget-image-wrapper">
                         <img
                           class="portfolio__widget-image"
-                          src="images/portfolio/widget_pf_thumb_01.png"
-                          alt="라이트박스 위젯 이미지"
+                          src="images/portfolio/widget_pf_thumb_09.png"
+                          alt="회원 정보 수정 이미지 업로드 위젯 썸네일 이미지"
                         />
                       </div>
                       <div class="portfolio__widget-desc">
                         <div class="portfolio__widget-info">
                           <h4 class="portfolio__widget-name">
-                            라이트박스 위젯
+                            회원 정보 수정 (이미지 업로드)
                           </h4>
                           <p class="portfolio__widget-intro">
-                            아이템 클릭 시 라이트박스 형태로 나타나는 위젯
+                            프로필 이미지 업로드 기능을 포함한 회원 정보 수정
+                            위젯
                           </p>
                           <div class="portfolio__widget-stack">
                             <span class="portfolio__widget-stack-item"
@@ -905,16 +950,19 @@
                               >CSS</span
                             >
                             <span class="portfolio__widget-stack-item"
-                              >jQuery</span
+                              >JavaScript</span
                             >
                           </div>
                         </div>
                         <div class="portfolio__widget-links">
-                          <a href="#" class="portfolio__widget-link"
-                            ><img src="images/icons/icon_link.svg" /><span
-                              >View Widget</span
-                            ></a
+                          <a
+                            href="portfolio/widget/09/index.html"
+                            class="portfolio__widget-link"
+                            target="_blank"
                           >
+                            <img src="images/icons/icon_link.svg" />
+                            <span>View Widget</span>
+                          </a>
                         </div>
                       </div>
                     </li>
@@ -925,10 +973,20 @@
                 </div>
               </div>
               <div class="portfolio__other-portfolio">
-                <h3 class="portfolio__other-title">이외의 프로젝트</h3>
+                <div class="portfolio__other-heading">
+                  <h3 class="portfolio__other-title">이외의 프로젝트</h3>
+                  <p class="portfolio__other-subtitle">
+                    디자인을 참고해 직접 마크업 구조를 작성하며 제작한 학습용
+                    프로젝트입니다.
+                  </p>
+                </div>
                 <ul class="portfolio__other-list">
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/01/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_01.png"
@@ -941,7 +999,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/02/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_02.png"
@@ -954,7 +1016,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/03/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_03.png"
@@ -967,7 +1033,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/04/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_04.png"
@@ -980,7 +1050,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/05/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_05.png"
@@ -993,7 +1067,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/06/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_06.png"
@@ -1006,7 +1084,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/07/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_07.png"
@@ -1019,7 +1101,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/08/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_08.png"
@@ -1032,7 +1118,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/09/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_09.png"
@@ -1045,7 +1135,11 @@
                     </div>
                   </li>
                   <li class="portfolio__other-item">
-                    <a class="portfolio__other-link" href="#">
+                    <a
+                      class="portfolio__other-link"
+                      href="portfolio/other/10/index.html"
+                      target="_blank"
+                    >
                       <img
                         class="portfolio__other-image"
                         src="images/portfolio//other_pf_thumb_10.png"

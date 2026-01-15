@@ -511,7 +511,6 @@ html {
   flex-direction: column;
   box-shadow: var(--shadow-md);
   border-radius: var(--radius-sm);
-  cursor: pointer;
   transition: transform 0.3s ease;
 }
 .portfolio__widget-item:hover {
@@ -577,8 +576,17 @@ html {
   flex-direction: column;
   gap: var(--space-md);
 }
+.portfolio__other-heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
 .portfolio__other-title {
   font-size: var(--font-xl);
+}
+.portfolio__other-subtitle {
+  font-size: var(--font-md);
+  color: var(--text-secondary);
 }
 .portfolio__other-list {
   display: grid;
@@ -614,6 +622,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  pointer-events: none;
 }
 .portfolio__other-overlay p {
   color: var(--color-white);
