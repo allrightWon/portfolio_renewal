@@ -368,18 +368,18 @@ html {
   height: 46px;
 }
 .skills__skill-desc {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-xxs);
   border-top: 1px solid var(--gray-300);
   padding-top: var(--space-sm);
 }
+.skills__skill-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  list-style-type: disc;
+}
 .skills__skill-desc p {
   font-size: var(--font-md);
-}
-.skills__skill-desc p::before {
-  content: "• ";
-  color: var(--text-muted);
+  word-break: keep-all;
 }
 /* Section : Portfolio */
 .portfolio {
