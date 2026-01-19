@@ -1,6 +1,27 @@
 const page = {
   init() {
+    this.themeToggle();
     this.portfolio();
+  },
+  themeToggle() {
+    const html = document.documentElement;
+    const toggleBtn = document.querySelector(".theme-toggle");
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme) {
+      html.setAttribute("data-theme", savedTheme);
+      toggleBtn.textContent = savedTheme === "dark" ? "Light" : "Dark";
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      const theme = html.getAttribute("data-theme");
+      const next = theme === "dark" ? "light" : "dark";
+
+      html.setAttribute("data-theme", next);
+      localStorage.setItem("theme", next);
+      toggleBtn.textContent = next === "dark" ? "Light" : "Dark";
+    });
   },
   portfolio() {
     // Main Portfolio Tab Change

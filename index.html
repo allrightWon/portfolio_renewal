@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -13,13 +13,14 @@
     <title>Portfolio | 안재원</title>
   </head>
   <body>
+    <button class="theme-toggle"></button>
     <div class="page-wrapper">
       <header class="page-header">
         <div class="inner">
           <div class="page-header__logo-wrapper">
             <a href="/" aria-label="홈으로 이동">
               <img
-                src="images/header/logo.png"
+                src="images/header/logo_light.png"
                 class="page-header__logo-image"
                 alt="홈페이지 로고 이미지"
               />
@@ -138,6 +139,14 @@
                   <li class="rolling-banner__item">
                     <img
                       class="rolling-banner__image"
+                      src="images/common/skill_scss.svg"
+                      alt="SCSS 아이콘 이미지"
+                    />
+                    <span class="rolling-banner__text">SCSS</span>
+                  </li>
+                  <li class="rolling-banner__item">
+                    <img
+                      class="rolling-banner__image"
                       src="images/common/skill_js.svg"
                       alt="JavaScript 아이콘 이미지"
                     />
@@ -158,14 +167,6 @@
                       alt="jQuery 아이콘 이미지"
                     />
                     <span class="rolling-banner__text">jQuery</span>
-                  </li>
-                  <li class="rolling-banner__item">
-                    <img
-                      class="rolling-banner__image"
-                      src="images/common/skill_scss.svg"
-                      alt="SCSS 아이콘 이미지"
-                    />
-                    <span class="rolling-banner__text">SCSS</span>
                   </li>
                   <li class="rolling-banner__item">
                     <img
@@ -441,17 +442,25 @@
                           </div>
                           <h4 class="portfolio__main-name">도서 검색 페이지</h4>
                           <p class="portfolio__main-intro">
-                            카카오 도서 검색 API를 활용하여, 간단한 도서 검색
-                            페이지를 제작했습니다.
+                            React와 Kakao API를 활용해 도서 검색 서비스를
+                            구현했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>Router를 통한 페이지 이동</li>
                             <li>
-                              메인 페이지, 검색 결과 페이지, 도서 상세 페이지,
-                              카테고리 페이지
+                              React Router를 활용한 페이지 간 이동 및 상태 관리
                             </li>
-                            <li>검색 결과 페이지네이션 구현</li>
-                            <li>카테고리 기반 필터링</li>
+                            <li>
+                              Kakao 도서 검색 API 연동을 통한 도서 검색 및 상세
+                              정보 조회
+                            </li>
+                            <li>
+                              비동기 API 요청에 따른 로딩·성공·에러 상태 분리
+                              처리
+                            </li>
+                            <li>
+                              URL 쿼리 파라미터 기반 검색어 상태 관리로 새로고침
+                              시에도 결과 유지
+                            </li>
                           </ul>
                           <div class="portfolio__main-stack">
                             <span class="portfolio__main-stack-item">HTML</span>
@@ -465,14 +474,13 @@
                           </div>
                         </div>
                         <div class="portfolio__main-links">
-                          <a class="portfolio__main-link" href="#">
+                          <a
+                            class="portfolio__main-link"
+                            href="https://react-book-search-app.vercel.app/"
+                            target="_blank"
+                          >
                             <img src="images/icons/icon_link.svg" /><span
                               >View Site</span
-                            ></a
-                          >
-                          <a class="portfolio__main-link" href="#">
-                            <img src="images/icons/icon_github.svg" /><span
-                              >Github</span
                             ></a
                           >
                         </div>
@@ -499,11 +507,20 @@
                             페이지를 제작했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>Reducer 기반 CRUD 구현</li>
                             <li>
-                              Context 사용을 통해 props drilling 문제 해결
+                              React Router를 활용한 글 목록, 상세, 작성, 수정
+                              페이지 흐름 설계
                             </li>
-                            <li>게시물 검색 기능 구현 & 검색어 강조</li>
+                            <li>게시글 작성, 수정, 삭제 기능 구현(CRUD)</li>
+                            <li>
+                              Layout 컴포넌트를 통해 공통 레이아웃 요소
+                              유지(Outlet 사용)
+                            </li>
+
+                            <li>
+                              게시글 검색 및 정렬 결과를 기준으로 페이지네이션
+                              처리
+                            </li>
                           </ul>
                           <div class="portfolio__main-stack">
                             <span class="portfolio__main-stack-item">HTML</span>
@@ -511,20 +528,16 @@
                             <span class="portfolio__main-stack-item"
                               >React</span
                             >
-                            <span class="portfolio__main-stack-item"
-                              >Kakao API</span
-                            >
                           </div>
                         </div>
                         <div class="portfolio__main-links">
-                          <a class="portfolio__main-link" href="#">
+                          <a
+                            class="portfolio__main-link"
+                            href="https://react-board.vercel.app/"
+                            target="_blank"
+                          >
                             <img src="images/icons/icon_link.svg" /><span
                               >View Site</span
-                            ></a
-                          >
-                          <a class="portfolio__main-link" href="#">
-                            <img src="images/icons/icon_github.svg" /><span
-                              >Github</span
                             ></a
                           >
                         </div>
@@ -549,15 +562,19 @@
                             투두리스트 페이지
                           </h4>
                           <p class="portfolio__main-intro">
-                            React를 기반으로 간단한 투두리스트 페이지를
+                            React를 기반으로 할 일을 정리하는 TodoList 페이지를
                             제작했습니다.
                           </p>
                           <ul class="portfolio__main-features">
-                            <li>투두리스트 추가 및 삭제 기능</li>
+                            <li>
+                              useReducer를 활용해 Todo 상태를 일관성 있게 관리
+                            </li>
+                            <li>Context API를 사용해 props drilling 방지</li>
+                            <li>
+                              LocalStorage 연동을 통해 새로고침 이후에도 데이터
+                              유지
+                            </li>
                             <li>리스트 드래그 앤 드롭 기능 구현(dnd-kit)</li>
-                            <li>완료 체크박스 구현</li>
-                            <li>완료/진행중, 최신순/오래된순 기반 정렬 구현</li>
-                            <li>필터링 기반 검색 기능 구현</li>
                           </ul>
                           <div class="portfolio__main-stack">
                             <span class="portfolio__main-stack-item">HTML</span>
@@ -565,20 +582,16 @@
                             <span class="portfolio__main-stack-item"
                               >React</span
                             >
-                            <span class="portfolio__main-stack-item"
-                              >Kakao API</span
-                            >
                           </div>
                         </div>
                         <div class="portfolio__main-links">
-                          <a class="portfolio__main-link" href="#">
+                          <a
+                            class="portfolio__main-link"
+                            href="https://react-todolist-one-sigma.vercel.app/"
+                            target="_blank"
+                          >
                             <img src="images/icons/icon_link.svg" /><span
                               >View Site</span
-                            ></a
-                          >
-                          <a class="portfolio__main-link" href="#">
-                            <img src="images/icons/icon_github.svg" /><span
-                              >Github</span
                             ></a
                           >
                         </div>
@@ -1151,7 +1164,16 @@
         </section>
         <!-- Section : Epilogue -->
         <section id="epilogue" class="epilogue">
-          <div class="inner"></div>
+          <div class="inner">
+            <div class="epilogue__content">
+              <div class="epilogue__contact">
+                <a href="mailto:hyo4754@naver.com">Mail : hyo4754@naver.com</a>
+              </div>
+              <div class="epilogue-message">
+                <p>감사합니다.</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
