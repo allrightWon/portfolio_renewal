@@ -27,6 +27,14 @@
   .intro__title {
     font-size: var(--font-3xl);
   }
+  /* Intro Rolling Banner */
+  .rolling-banner__track {
+    width: max-content;
+  }
+  .rolling-banner__list {
+    justify-content: flex-start;
+    gap: var(--space-sm);
+  }
   /* Section : About */
   .about {
     padding: var(--space-section-md) 0;
