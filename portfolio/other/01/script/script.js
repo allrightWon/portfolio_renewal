@@ -29,17 +29,17 @@
     },
     include() {
       /* Header Include */
-      $(".header-include").load("../include/header.html", function () {
+      $(".header-include").load("include/header.html", function () {
         /* Header Category Mouseenter & Mouseleave */
         $(".header-category-container, .header-category").mouseenter(
           function () {
             $(".header-category").stop().slideDown();
-          }
+          },
         );
         $(".header-category-container, .header-category").mouseleave(
           function () {
             $(".header-category").stop().slideUp();
-          }
+          },
         );
         $(".header-category-main li").mouseenter(function () {
           if ($(this).children(".header-category-sub").length > 0) {
@@ -73,7 +73,7 @@
             $(this).children(".bi").toggleClass("bi-chat-dots, bi-x-lg");
             $(".support-modal").fadeToggle();
           });
-        }
+        },
       );
       /* Mobile Bottom Navigation Include */
       $(".mo-bottom-nav-include").load("../include/mo-bottom-nav.html");
